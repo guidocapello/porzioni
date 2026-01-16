@@ -1,0 +1,69 @@
+body {
+	font-family: sans-serif;
+	padding: 20px;
+	background-color: #f4f4f9;
+	color: #333;
+}
+
+h2 {
+	margin-top: 30px;
+	font-size: 1.5em;
+}
+
+/* Layout a griglia */
+.row {
+	display: grid;
+	grid-template-columns: 40px 100px 100px;
+	gap: 15px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+.header {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.header-label {
+	text-align: right;
+	padding-right: 15px;
+}
+
+/* Input e allineamento */
+input {
+	font-size: 1.1em;
+	padding: 6px;
+	width: 80px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: right;
+}
+
+input:focus {
+	outline: 2px solid #4CAF50;
+	background-color: #fffde7;
+}
+
+.col-num {
+	text-align: right;
+	padding-right: 15px;
+}
+
+/* Classi di stato */
+.pos { color: #2e7d32; font-weight: bold; }
+.neg { color: #d32f2f; font-weight: bold; }
+.ok { color: #2e7d32; font-weight: bold; }
+.warn { color: #d32f2f; font-weight: bold; }
+
+hr {
+	margin: 30px 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+.total-line {
+	font-size: 1.1em;
+	margin-top: 15px;
+}
