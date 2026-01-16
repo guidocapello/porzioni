@@ -12,6 +12,13 @@
 
 	<link rel="manifest" href="manifest.json">
 </head>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js')
+    .then(reg => console.log('SW registrato', reg))
+    .catch(err => console.error('SW errore', err));
+}
+</script>
 <body>
 
 <h2>Pesi impiattati</h2>
@@ -39,11 +46,6 @@
     <span id="percTot" class="ok">100%</span>
 </p>
 
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js");
-}
-</script>
 <script src="script.js"></script>
 </body>
 </html>
